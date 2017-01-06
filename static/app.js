@@ -2,8 +2,6 @@ $(function(){
 
 
     var getImageSuccess = function(data){
-        console.log("okay we have image data.");
-        console.log(data);
         $("#imageID").attr("src", "/currentimage");
     };
     var getImageFailure = function(data){
