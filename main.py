@@ -17,12 +17,11 @@ def handle_pic():
         dim1, dim2 = img_ob.size
         dim1 = int(dim1 / 16)
         dim2 = int(dim2 / 16)
-        print("resizing to: %d and %d" % (dim1, dim2))
         img_ob.resize((dim1, dim2), Image.NEAREST)
         img_ob.save("myfile.jpg")
-        print("okay got this far in image processing the upload...")
+        return "Picture saved"
 
-    return "check the file directory in the server and what have you"
+    return "Picture info did not get saved."
 
 
 @app.route("/currentimage", methods=["GET"])
