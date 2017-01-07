@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+    </style>
 </head>
 <body>
 
 <div class="container">
     <form class="form-group">
-        
-        <label for="fileField">Picture</label>
-        <input type="file" accept="image/*;device=camera" id="fileField" name="fileField" />
 
+        <label for="fileField" class="btn btn-lg btn-primary btn-block">
+            Take Picture
+        </label>
+        <input type="file" accept="image/*;device=camera" class="invisible" id="fileField" name="fileField"/>
     </form>
     <br />
     <h1>The image</h1><br />
